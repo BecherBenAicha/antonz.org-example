@@ -1,0 +1,74 @@
+  282  git clone https://github.com/BecherBenAicha/antonz.org-example.git
+  283  cd antonz.org-example/
+  284  echo "git is awesome" > message.txt
+  285  git diff
+  286  ls
+  287  echo "git is awesome v2" > message.txt
+  288  git add message.txt 
+  289  git diff --cached 
+  290  git commit -m "first commit"
+  291  echo "git is awesome v3" > message.txt
+  292  git diff
+  293  git commit -am "commit v3"
+  294  git mv message.txt praise.txt
+  295  git diff --cached 
+  296  git rm message.txt
+  297  ls
+  298  git commit -m "rename message.txt"
+  299  git rm message.txt
+  300  rm 'message.txt'
+  301  git diff --cached
+  302  git push
+  303  git status
+  304  git log
+  305  git log --oneline
+  306  git log --graph 
+  307  echo "git is awesome v1" > message.txt
+  308  git show HEAD
+  309  git show HEAD~1
+  310  git show HEAD~2
+  311  cat message.txt 
+  312  git grep "debate"
+  313  git grep "great" HEAD~1
+  314  git branch ohmypy
+  315  git switch ohmypy
+  316  git branch 
+  317  echo "print('git is awesome')" > ohmy.py
+  318  git add ohmy.py
+  319  git commit -m "ohmy.py"
+  320  git log --oneline main..ohmypy
+  321  git log --all --oneline --graph
+  322  git merge ohmypy
+  323  git log --all --oneline --graph
+  324  git switch main 
+  325  git merge ohmypy
+  326  git log --all --oneline --graph
+  327  git rebase ohmypy
+  328  git push
+  329  git switch ohmypy
+  330  git log --all --oneline --graph --decorate
+  331  git add message.txt 
+  332  git commit -m 'modif message on ohmypy'
+  333  git log --all --oneline --graph --decorate
+  334  git commit -am 'second modif message on ohmypy'
+  335  git log --all --oneline --graph --decorate
+  336  git switch main 
+  337  git cherry-pick fb0dbc0
+  338  cat message.txt 
+  339  git switch ohmypy 
+  340  git switch main 
+  341  git log --all --oneline --graph --decorate
+  342  git commit -am 'modif message from main'
+  343  git log --all --oneline --graph --decorate
+  344  git push
+  345  git pull
+  346  git stash
+  347  git pull
+  348  git stash pop
+  349  git commit -am 'commit after stash'
+  350  git pull
+  351  git pull
+  352  git diff
+  353  git log --all --oneline --graph --decorate
+  354  git push
+  355  history >history.txt
